@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from . import views 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls), # Ruta para el panel de administración
+    path('robot2r/', views.robot2r_view, name='robot2r_view'), # Ruta para la vista del robot 2R
 ]

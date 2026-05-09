@@ -54,7 +54,7 @@ ROOT_URLCONF = 'src.django.robot2r.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'src/django/robot2r/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
